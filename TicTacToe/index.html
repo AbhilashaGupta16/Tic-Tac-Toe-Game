@@ -20,28 +20,28 @@
   <div class="title text-white d-flex align-items-center justify-content-center">
     <h4 class=>TIC - TAC - TOE</h4>
   </div>
-  <div class="text-white score d-flex align-items-center justify-content-center">
-    <div class="players d-flex flex-column align-items-center justify-content-center">
-      <div class="side d-flex align-items-center justify-content-center">
+  <div class="text-white score  row">
+    <div class="players d-flex flex-column align-items-center justify-content-center  col-12 col-md-6">
+      <div class="side ">
         <h4 class="player-input">PLAYER-1 : </h4>
         <h4 id="Player1" class="text-white player-names"></h4>
       </div>
       <br>
-      <div class="down d-flex flex-column align-items-center justify-content-center">
+      <div class="down ">
         <h5>Symbol : X </h5>
         <h5 id="score-1">Score : 0</h5>
       </div>
     </div>
-    <div id="victory" class="text-white players d-flex align-items-center justify-content-center">
+    <!-- <div id="victory" class="text-white players">
 
-    </div>
-    <div class="players d-flex flex-column align-items-center justify-content-center">
-      <div class="side d-flex align-items-center justify-content-center">
+    </div> -->
+    <div class="players d-flex flex-column align-items-center justify-content-center col-12 col-md-6">
+      <div class="side ">
         <h4 class="player-input">PLAYER-2 : </h4>
         <h4 id="Player2" class="text-white player-names"></h4>
       </div>
       <br>
-      <div class="down d-flex flex-column align-items-center justify-content-center">
+      <div class="down ">
         <h5>Symbol : O </h5>
         <h5 id="score-2"> Score : 0</h5>
       </div>
@@ -50,26 +50,26 @@
 
   <div id="tic-tac-toe" class="d-flex align-items-center justify-content-center">
     <div id="container" class="row d-flex align-items-center justify-content-center">
-      <div id="box-1" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(1)" name="1"></div>
-      <div id="box-2" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(2)" name="2"></div>
-      <div id="box-3" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(3)" name="3"></div>
-      <div id="box-4" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(4)" name="4"></div>
-      <div id="box-5" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(5)" name="5"></div>
-      <div id="box-6" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(6)" name="6"></div>
-      <div id="box-7" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(7)" name="7"></div>
-      <div id="box-8" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(8)" name="8"></div>
-      <div id="box-9" class="box col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(9)" name="9"></div>
+      <div id="box-1" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4  text-white" onclick="play(1)" name="1"></div>
+      <div id="box-2" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(2)" name="2"></div>
+      <div id="box-3" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(3)" name="3"></div>
+      <div id="box-4" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(4)" name="4"></div>
+      <div id="box-5" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(5)" name="5"></div>
+      <div id="box-6" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(6)" name="6"></div>
+      <div id="box-7" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(7)" name="7"></div>
+      <div id="box-8" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(8)" name="8"></div>
+      <div id="box-9" class="box col-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 text-white" onclick="play(9)" name="9"></div>
     </div>
   </div>
 
-  <div id="btn-start" class="d-flex align-items-center justify-content-center">
-    <div class="btn" onclick="start()"><svg class="text-black bg-white" width="1em" height="1em" viewBox="0 0 16 16"
+  <div id="btn-start" class="d-flex align-items-center justify-content-center row">
+    <div class="btn col-8 col-sm-3" onclick="start()"><svg class="text-black bg-white" width="1em" height="1em" viewBox="0 0 16 16"
         class="bi bi-skip-start-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" d="M4.5 3.5A.5.5 0 0 0 4 4v8a.5.5 0 0 0 1 0V4a.5.5 0 0 0-.5-.5z" />
         <path
           d="M4.903 8.697l6.364 3.692c.54.313 1.232-.066 1.232-.697V4.308c0-.63-.692-1.01-1.232-.696L4.903 7.304a.802.802 0 0 0 0 1.393z" />
       </svg> Start</div>
-    <div class="btn" onclick="replay()">Re-Play <svg class="text-black bg-white" width="1em" height="1em"
+    <div class="btn col-8 col-sm-3" onclick="replay()">Re-Play <svg class="text-black bg-white" width="1em" height="1em"
         viewBox="0 0 16 16" class="bi bi-arrow-repeat" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />

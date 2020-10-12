@@ -117,7 +117,7 @@ function play(x) {
         }
     }
     c = c + 1
-    if (c == 9) {
+    if (c == 9 && flag!=1) {
         if (document.getElementById("victory") != null) {
             document.getElementById("victory").innerHTML = "TIE";
         }

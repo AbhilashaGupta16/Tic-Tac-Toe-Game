@@ -80,6 +80,8 @@ function equality(a, b, c, x) {
 
 
 function play(x) {
+    if(flag==1)
+        replay()
     var st = x.toString();
     var r = ""
     var box_no = "box-" + st;

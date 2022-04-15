@@ -80,12 +80,12 @@ function equality(a, b, c, x) {
 
 
 function play(x) {
-    if(flag==1)
+    if (flag == 1)
         replay()
     var st = x.toString();
     var r = ""
     var box_no = "box-" + st;
-    
+
     if (c % 2 == 0) {
         arr[x - 1] = "X"
         r = "X"
@@ -119,7 +119,7 @@ function play(x) {
         }
     }
     c = c + 1
-    if (c == 9 && flag!=1) {
+    if (c == 9 && flag != 1) {
         if (document.getElementById("victory") != null) {
             document.getElementById("victory").innerHTML = "TIE";
         }
@@ -132,4 +132,3 @@ if (f == 0) {
         document.getElementById("victory").innerHTML = "TIE";
     }
 }
-

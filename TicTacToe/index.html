@@ -12,13 +12,20 @@
 
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
-
   <title>Tic Tac Toe</title>
 </head>
 
-<body>
-  <div class="title text-white d-flex align-items-center justify-content-center">
+<body class="light-mode">
+  <div class="title text-white d-flex flex-column align-items-center justify-content-center">
     <h4 class=>TIC - TAC - TOE</h4>
+    <div class="mode-selection d-flex flex-column align-items-center justify-content-center mt-5">
+      <p>Mode</p>
+      <label class="switch">
+        <input type="checkbox" id="modeBtn">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
   </div>
   <div class="victory-box">
     <div id="victory" class="text-white bg-black d-flex align-items-center justify-content-center">
@@ -92,6 +99,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+  <script src="./mode-toggle.js"></script>
 </body>
 
 </html>
